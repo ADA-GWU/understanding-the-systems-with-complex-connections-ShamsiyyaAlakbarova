@@ -13,15 +13,12 @@ print('Socket is listening')
 while True:
     c, addr = s.accept()
     print('Got connection from', addr)
-    
-    # Receive the number from the client
+
     number = c.recv(1024).decode()
-    print('Received number:', number)
     
-    # Double the number
+    # Double the number 
     result = str(int(number) * 2)
     
-    # Send the result back to the client
-    c.send(result.encode())
+    print('Result from server:', result)
     
     c.close()

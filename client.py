@@ -10,8 +10,4 @@ number = input("Enter a number: ")
 # Send the number to the server
 s.send(number.encode())
 
-# Receive and print the result from the server
-result = s.recv(1024).decode()
-print('Result from server:', result)
-
 s.close()
