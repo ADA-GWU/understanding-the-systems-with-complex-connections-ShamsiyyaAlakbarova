@@ -1,35 +1,5 @@
-"""import socket
-
-s = socket.socket()
-print('Socket created')
-
-port = 9001
-s.bind(('', port))
-print(f'Socket bound to port {port}')
-
-s.listen(3)
-print('Socket is listening')
-
-while True:
-    c, addr = s.accept()
-    print('Got connection from', addr)
-
-    while True:
-        number = c.recv(1024).decode()
-
-        if not number:
-            break
-        
-        # Double the number
-        result = str(int(number) * 2)
-
-        print('Result from server:', result)
-
-        c.send(result.encode())
-
-    c.close()"""
-
 import socket
+import sys
 
 def handle_client(client_socket):
     while True:
@@ -47,30 +17,29 @@ def handle_client(client_socket):
 
     client_socket.close()
 
-# Create sockets and bind them to specific ports
-ports = [9001, 9002, 9003]
-sockets = []
+def main():
+    if len(sys.argv) != 2:
+        print("Usage: python server.py <port>")
+        sys.exit(1)
 
-for port in ports:
+    try:
+        port = int(sys.argv[1])
+    except ValueError:
+        print("Invalid port number")
+        sys.exit(1)
+
+    print(f'Socket created for port {port}')
+
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.bind(('0.0.0.0', port))
     s.listen(5)  # You can adjust the backlog queue size as needed
-    sockets.append(s)
-    print(f'Socket bound to port {port}')
 
-print('Server is listening on multiple ports')
+    print(f'Server is listening on port {port}')
 
-while True:
-    for i, s in enumerate(sockets):
+    while True:
         c, addr = s.accept()
-        print(f'Got connection on port {ports[i]} from', addr)
+        print(f'Got connection from', addr)
         handle_client(c)
 
-
-
-    
-
-
-
-
-
+if __name__ == "__main__":
+    main()

@@ -1,24 +1,3 @@
-"""import socket
-
-s = socket.socket()
-print('Socket created')
-
-port = 9001
-s.connect(('127.0.0.1', port))
-
-while True:
-    # Get a number from the user
-    number = input("Enter a number (or 'exit' to quit): ")
-    
-    if number.lower() == 'exit':
-        break
-
-    # Send the number to the server
-    s.send(number.encode())
-
-s.close()
-"""
-
 import socket
 import sys
 
