@@ -4,7 +4,7 @@ import sys
 s = socket.socket()
 
 if len(sys.argv) != 2:
-    print("Usage: python client.py <port>")
+    print("Please, indicate port number: python client.py <port>")
     sys.exit(1)
 
 try:
@@ -34,7 +34,5 @@ try:
 
 except ConnectionRefusedError:
     print("Connection refused. Make sure the server is running.")
-except KeyboardInterrupt:
-    print("Client is closing.")
 finally:
     s.close()

@@ -19,7 +19,7 @@ def handle_client(client_socket):
 
 def main():
     if len(sys.argv) != 2:
-        print("Usage: python server.py <port>")
+        print("Please, indicate port number: python server.py <port>")
         sys.exit(1)
 
     try:
@@ -32,7 +32,7 @@ def main():
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.bind(('0.0.0.0', port))
-    s.listen(5)  # You can adjust the backlog queue size as needed
+    s.listen(3)  # You can adjust the backlog queue size as needed
 
     print(f'Server is listening on port {port}')
 
