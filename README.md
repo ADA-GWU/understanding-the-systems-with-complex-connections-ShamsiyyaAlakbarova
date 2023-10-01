@@ -36,3 +36,5 @@ Step 6. Enter a number. You will see a doubled result of this number in first te
 Step 7. Go to client again, and type exit. After you quit, you can specify another port number in the client.
 For example, 9002. You will run this command in the client window: python client.py 9002. 
 After you will do the same steps, as step 5, and step 6. 
+
+As you can see, you specify your port both for server and client. Then client sends your input to those port, that you have indicated. If you indicated in client port 9003, you will see the result in according server window (with 9003 port listening). 
