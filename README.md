@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/Bp585G7b)
 
 <h2>1.Prerequisites.</h2> 
-<p>Before you can use this application, you will need to ensure that you have Python installed on your system. If you don't have Python installed, you can visit the official Python website at python.org, and download for your OS.</p>
+<p>Before you can use this application, you will need to ensure that you have Python installed on your system. If you don't have Python installed, you can visit the official Python website at https://www.python.org/, and download for your OS.</p>
 
 
 <h2>2.Set Up Environment (via Git command).</h2>
