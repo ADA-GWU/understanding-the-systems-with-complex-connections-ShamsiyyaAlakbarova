@@ -32,7 +32,7 @@ def main():
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.bind(('0.0.0.0', port))
-    s.listen(3)  # You can adjust the backlog queue size as needed
+    s.listen(3)
 
     print(f'Server is listening on port {port}')
 
