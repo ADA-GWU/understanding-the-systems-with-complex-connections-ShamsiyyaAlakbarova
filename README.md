@@ -17,6 +17,10 @@ Step 5. Next clone my repo by pasting copied HTTPS link.
 Run this command: git clone https://github.com/ADA-GWU/understanding-the-systems-with-complex-connections-ShamsiyyaAlakbarova.git
 Step 6. Run this command: cd understanding-the-systems-with-complex-connections-ShamsiyyaAlakbarova. Now you are in the repo, and can start to use the application.
 
+P.S. if you encounter issues while trying to clone a repository using a Git command, you can indeed download the repository as a ZIP file from the repository's web page.
 
 3.Run the Application
-
+Step 1. Open 4 terminal windows. 3 windows are for server, and 1 window is for client.
+Step 2. In each terminal window you should be inside the repo. 
+Commands: cd Desktop  => cd test => cd understanding-the-systems-with-complex-connections-ShamsiyyaAlakbarova  
+Step 3.
