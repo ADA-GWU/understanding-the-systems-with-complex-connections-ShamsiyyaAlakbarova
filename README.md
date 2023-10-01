@@ -1,11 +1,11 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/Bp585G7b)
 
-1.Prerequisites
-Before you can use this application, you will need to ensure that you have Python installed on your system. If you don't have Python installed, you can visit the official Python website at python.org, and download for your OS.
+<h2>1.Prerequisites.<h2> 
+<p>Before you can use this application, you will need to ensure that you have Python installed on your system. If you don't have Python installed, you can visit the official Python website at python.org, and download for your OS.</p>
 
 
-2.Set Up Environment (via Git command)
-Step 1. Create folder on your desktop. Name it as you wish. For example, "test".
+<h2>2.Set Up Environment (via Git command).<h2>
+<p>Step 1. Create folder on your desktop. Name it as you wish. For example, "test".
 Step 2. Go to my github repository (https://github.com/ADA-GWU/understanding-the-systems-with-complex-connections-ShamsiyyaAlakbarova). 
 Step 3. Press to green CODE button, and copy HTTPS link (https://github.com/ADA-GWU/understanding-the-systems-with-complex-connections-ShamsiyyaAlakbarova.git).
 Step 4. Open your terminal, and enter into your newly created folder "test". You can do this
@@ -15,11 +15,11 @@ cd test
 After running these two commands, you will be inside your "test" folder.
 Step 5. Next clone my repo by pasting copied HTTPS link. 
 Run this command: git clone https://github.com/ADA-GWU/understanding-the-systems-with-complex-connections-ShamsiyyaAlakbarova.git
-Step 6. Run this command: cd understanding-the-systems-with-complex-connections-ShamsiyyaAlakbarova. Now you are in the repo, and can start to use the application.
+Step 6. Run this command: cd understanding-the-systems-with-complex-connections-ShamsiyyaAlakbarova. Now you are in the repo, and can start to use the application.</p>
 
-P.S. if you encounter issues while trying to clone a repository using a Git command, you can indeed download the repository as a ZIP file from the repository's web page.
+<p>P.S. if you encounter issues while trying to clone a repository using a Git command, you can indeed download the repository as a ZIP file from the repository's web page.</p>
 
-3.Run the Application
+3.Run the Application.
 Step 1. Open 4 terminal windows. 3 windows are for server, and 1 window is for client.
 Step 2. In each terminal window you should be inside the repo. 
 Commands: cd Desktop  => cd test => cd understanding-the-systems-with-complex-connections-ShamsiyyaAlakbarova  
