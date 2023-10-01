@@ -4,7 +4,7 @@
 Before you can use this application, you will need to ensure that you have Python installed on your system. If you don't have Python installed, you can visit the official Python website at python.org, and download for your OS.
 
 
-2.Set Up Environment
+2.Set Up Environment (via Git command)
 Step 1. Create folder on your desktop. Name it as you wish. For example, "test".
 Step 2. Go to my github repository (https://github.com/ADA-GWU/understanding-the-systems-with-complex-connections-ShamsiyyaAlakbarova). 
 Step 3. Press to green CODE button, and copy HTTPS link (https://github.com/ADA-GWU/understanding-the-systems-with-complex-connections-ShamsiyyaAlakbarova.git).
@@ -23,4 +23,16 @@ P.S. if you encounter issues while trying to clone a repository using a Git comm
 Step 1. Open 4 terminal windows. 3 windows are for server, and 1 window is for client.
 Step 2. In each terminal window you should be inside the repo. 
 Commands: cd Desktop  => cd test => cd understanding-the-systems-with-complex-connections-ShamsiyyaAlakbarova  
-Step 3.
+Step 3. In first terminal run this command: python server.py 9001
+Instead of 9001 you can specify any available port on ypur system.
+After running this command, you will see this output "Socket created for port 9001
+Server is listening on port 9001". It means, that server is listening on your 9001 port.
+Step 4. Do this for other two terminal windows for server. For example, for second window python server.py 9002, for third window python server.py 9003
+Step 5. In fourth terminal, that is for client, run this command: python client.py 9001
+Here, you also specify your port number, that is listening. You will get this output "Socket created for port 9001
+Connected to server on port 9001
+Enter a number (or 'exit' to quit):"
+Step 6. Enter a number. You will see a doubled result of this number in first terminal window, where server is listening on port 9001.
+Step 7. Go to client again, and type exit. After you quit, you can specify another port number in the client.
+For example, 9002. You will run this command in the client window: python client.py 9002. 
+After you will do the same steps, as step 5, and step 6. 
